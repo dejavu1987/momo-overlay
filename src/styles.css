@@ -1,0 +1,97 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous + Pro);
+
+/* Global */
+html {
+  min-height: 100vh;
+  overflow: hidden;
+}
+body {
+  height: 100vh;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: "Spartan", monospace;
+  background-color: rgb(25, 25, 25);
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  animation: fade 15s;
+  opacity: 0;
+  font-size: 3rem;
+}
+
+.overlay {
+  font-size: 1rem;
+  text-align: right;
+  padding: 1rem;
+  background: rgba(0, 40, 30, 0.6);
+  width: 20vw;
+  margin-left: auto;
+  text-shadow: 0.4rem 0.4rem 0.4rem #000;
+}
+
+.overlay h1 {
+  font-size: 2rem;
+  text-align: right;
+  border-bottom: 0.2rem solid;
+  display: inline-block;
+}
+
+.overlay.switching h1 {
+  font-size: 3rem;
+}
+
+.overlay.switching {
+  border: 0.2rem solid rgba(255, 255, 255, 0.3);
+  animation: fade-in 1s;
+  font-size: 3rem;
+  text-align: left;
+  width: 80vw;
+  padding: 3rem 5rem;
+  margin: 10vh 3rem;
+  height: 80vh;
+  box-sizing: border-box;
+  background: rgba(0, 30, 20, 0.8);
+}
+
+.control {
+  padding: 4rem;
+  font-size: 1.2rem;
+}
+
+.control ol ol {
+  list-style: upper-roman;
+}
+
+.control li {
+  cursor: pointer;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
