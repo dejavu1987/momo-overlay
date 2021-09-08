@@ -1,4 +1,4 @@
-import content from "./outline-JavaScript";
+import content from "./outline-ReactJs";
 
 export default function Control({ onModify }) {
   const subject = content[0];
