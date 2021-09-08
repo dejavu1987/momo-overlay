@@ -12,7 +12,7 @@ export default [
       { chapter: "Project 1 (Quiz App)" },
       { chapter: "useRef",
        sections: [
-       "introduction", "Usage", "forwardRef"
+       "Introduction", "Usage", "forwardRef"
        ]
       }
     ]
