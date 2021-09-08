@@ -9,7 +9,12 @@ export default [
       { chapter: "Props" },
       { chapter: "States" },
       { chapter: "UseEffect" },
-      { chapter: "Project 1 (Quiz App)" }
+      { chapter: "Project 1 (Quiz App)" },
+      { chapter: "useRef",
+       sections: [
+       "Introduction", "Usage", "forwardRef"
+       ]
+      }
     ]
   }
 ];
