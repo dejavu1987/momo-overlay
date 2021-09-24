@@ -1,12 +1,12 @@
-import Intro from "./Intro";
-import "./styles.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Overlay from "./Overlay";
-import { useSocket } from "./useSocket";
-import Control from "./Control";
+import Intro from './Intro';
+import './styles.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Overlay from './Overlay';
+import { useSocket } from './useSocket';
+import Control from './Control';
 
 export default function App() {
-  const { data, modifyData } = useSocket("publicRoom");
+  const { data, modifyData } = useSocket('publicRoom');
   return (
     <Router>
       <Switch>
@@ -16,7 +16,7 @@ export default function App() {
         <Route path="/overlay">
           <Overlay data={data} />
         </Route>
-        <Route path="/control">
+        <Route path="/control/:topic">
           <Control data={data} onModify={modifyData} />
         </Route>
         <Route path="/">
