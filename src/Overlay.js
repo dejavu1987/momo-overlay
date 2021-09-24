@@ -32,14 +32,14 @@ export default function Overlay({ data: { topic, chapter, section, page } }) {
         </div>
       )}
 
-      <button
+      {/* <button
         className="toggle"
         onClick={() => {
           setSwitching(!switching);
         }}
       >
         ToggleView
-      </button>
+      </button> */}
     </div>
   );
 }
