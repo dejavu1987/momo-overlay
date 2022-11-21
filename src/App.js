@@ -1,6 +1,6 @@
 import Intro from './Intro';
 import './styles.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Overlay from './Overlay';
 import { useSocket } from './useSocket';
 import Control from './Control';
